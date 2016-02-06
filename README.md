@@ -46,3 +46,9 @@ sox --norm input output
 sox in.wav out.wav silence 1 0.5 1% 1 5.0 1% : newfile : restart
 ```
 
+
+#Trim any silence longer than 1 sec
+
+```
+sox in.wav out.wav silence 1 1 0.1% reverse silence 1 1 0.1% reverse
+```
