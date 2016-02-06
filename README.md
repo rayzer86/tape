@@ -57,7 +57,7 @@ sox in.wav out.wav silence 1 1 0.1% reverse silence 1 1 0.1% reverse
 #Fun with sox
 
 
-#Make a sine-wave from 300 to 2000 Hz at 44100khz
+###Make a sine-wave from 300 to 2000 Hz at 44100khz
 
 ```
 sox -r 44100 -n -d synth 3 sine 300-2000
