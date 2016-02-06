@@ -1,3 +1,13 @@
+#always use!
+
+It will save you a lot of headache, no clobber = no overwrites
+
+
+```
+--no-clobber
+```
+
+
 #First fix a noise profile
 
 we will do this by recording a few seconds at the beginning of the cassete.
