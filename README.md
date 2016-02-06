@@ -1,1 +1,20 @@
-# tape
+#First fix a noise profile
+
+we will do this by recording a few seconds at the beginning of the cassete.
+I think this profile will work for everything recorded whit this setup.
+
+```
+sox -t coreaudio "USB Audio C" -n noiseprof ./noise.prof
+```
+
+#Then push record..
+
+This will record the sound, through OSX coreaudio and apply the noisereduction
+on the fly, the 0.21 is the fuzz so to speak. Higer values will eliminate more
+shit, but 0.21, seems like a reasonable bar.
+
+```
+sox -t coreaudio "USB Audio C" ./band68.flac noisered noise.prof 0.21
+```
+
+
