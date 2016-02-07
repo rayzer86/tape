@@ -8,7 +8,7 @@ It will save you a lot of headache, no clobber = no overwrites
 ```
 
 
-#First fix a noise profile
+#First we have to make a noise profile
 
 we will do this by recording a few seconds at the beginning of the cassete.
 I think this profile will work for everything recorded whit this setup.
@@ -55,6 +55,12 @@ sox in.wav out.wav silence 1 1 0.1% reverse silence 1 1 0.1% reverse
 
 
 #Fun with sox
+
+###Notes
+
+
+> - so argument order is key when dealing with sox? 
+> - Many sox options (including -t) can apply to either the input or the output. The order of the arguments controls whether it's an input or output option. 
 
 
 ###Make a sine-wave from 300 to 2000 Hz at 44100khz
